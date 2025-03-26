@@ -32,7 +32,7 @@ img[alt="LOGO"] {
 
 /* button */
 button[alt="toolbar"]{        
-        color: var(--pageBackground);
+        color: var(--generalTextColor);
         background-color: var(--darkOfLogo);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1vw;
@@ -43,7 +43,7 @@ button[alt="toolbar"]{
 }
 /* button upon hover */
 button:hover[alt="toolbar"]{          
-        color: var(--pageBackground);
+        color: var(--generalTextColor);
         background-color: rgb(6, 89, 153);
         cursor: pointer;
 }
