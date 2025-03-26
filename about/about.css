@@ -20,7 +20,7 @@ img[alt="portrait"] {
 
 p[alt="portrait"] {
     text-align: center; 
-    color: white;
+    color: var(--generalTextColor);
     justify-self: left;
     align-self:center;
     font-size:1.62vw;
