@@ -1,8 +1,8 @@
 /* default color scheme */
 :root {
 
-    --darkOfLogo: rgb(4,68,118);
-    --LightOfLogo: rgb(179,217,225);
-    --pageBackground: rgb(71, 84, 145);
-    --toolbarBackground: rgb(29, 51, 150);
+    --darkOfLogo: rgb(0, 82, 145);
+    --LightOfLogo: rgb(217, 217, 217);
+    --pageBackground: rgb(71, 71, 71);
+    --toolbarBackground: rgb(0, 0, 0);
 }
