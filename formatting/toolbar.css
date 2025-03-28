@@ -12,7 +12,7 @@
 
         /* type of container */
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap:5px;
         padding-bottom: 5px;
@@ -38,13 +38,14 @@ button[alt="toolbar"]{
         font-size: 1vw;
         height:95%;
         border:0px;
+        border-radius:3%;
         margin:0px;
 
 }
 /* button upon hover */
 button:hover[alt="toolbar"]{          
         color: var(--generalTextColor);
-        background-color: rgb(6, 89, 153);
+        background-color: rgb(7, 108, 185);
         cursor: pointer;
 }
 /* Mobile styles override */
@@ -63,7 +64,7 @@ button:hover[alt="toolbar"]{
 
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
                 column-gap:5px;
                 padding-bottom: 5px;
                 padding-top: 5px;
