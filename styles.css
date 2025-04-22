@@ -1,0 +1,144 @@
+/*remove excess space*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/*set some default colors*/
+:root {
+    --toolbarBackground: var(--pageBackground);
+    --toolbarButtons: var(--toolbarBackground);
+    --toolbarButtonHover: var(--titleFontColor);
+    --toolbarButtonFontColor: rgb(255, 255, 255);
+    --pageBackground:  rgb(0, 30, 62);
+    --titleFontColor: rgb(0, 123, 255);
+    --generalPageFontColor: rgb(255, 255, 255);
+    --generalPageFontHoverColor: rgb(125, 188, 255);
+    --bioBackground: var(--pageBackground);
+    --bioFontColor: rgb(255, 255, 255);
+    --footerBackground:  rgb(0, 123, 255);
+}
+/*define body attributes*/
+body {
+    background-color: var(--pageBackground);
+    color:var(--generalPageFontColor);
+}
+/*define header attributes*/
+h1{
+    color:var(--titleFontColor);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-bottom:.01vh;
+    text-align:center;
+}
+h1[alt="title"]{
+    color:var(--titleFontColor);
+    font-size:clamp(2rem, 11vw, 4.6rem);
+    font-family: serif;
+    font-weight: 300;
+    margin-bottom:20px;
+}
+h1[alt="title"]:hover{
+    color: var(--generalPageFontHoverColor);
+    cursor: pointer;
+}
+/*define paragraph attributes*/
+p {
+    color:var(--generalPageFontColor);
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* In this style sheet, 3 areas will be utilized:
+    Toolbar
+    Body (holding sub containers)
+    Footbar
+*/
+/* create the container to hold the toolbar items*/
+.toolbarContainer{
+    /*display type*/
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-self: center;
+    background-color: var(--toolbarBackground);
+    max-width:60vh;
+    border-style:solid;
+    border-width:1%;
+    border-radius:30px;
+    border-color: var(--generalPageFontColor);
+    margin-bottom:8vh;
+}
+/*toolbar button attributes*/
+button[alt="toolbar"]{
+    background-color: var(--toolbarButtons);
+    color: var(--toolbarButtonFontColor);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border:none;
+    margin:0;
+    padding: 1vh;
+    max-height:4vh;
+    min-height:2vh;
+}
+/*toolbar button hover animation*/
+@keyframes toolbarButtonHover {
+    from {background-color: var(--toolbarButtons);}
+    to {background-color: var(--toolbarButtonHover);}
+}
+/*toolbar button hover attributes*/
+button[alt="toolbar"]:hover{
+    cursor: pointer;
+    animation-name:toolbarButtonHover;
+    animation-duration: 1s;
+    background-color: var(--toolbarButtonHover);
+
+}
+/*biography container attributes*/
+.bio{
+    display:grid;
+    grid-template-columns: 1fr 1.3fr;
+    max-width:75vh;
+    margin:0 auto;
+    background-color: var(--bioBackground);
+    padding:0;
+    border-radius:30px;
+}
+/*bio font attributes*/
+p[alt="bio"]{
+    color: var(--bioFontColor);
+    align-self:center;
+    font-size:clamp(2vh,4vh);
+}
+/*bio image attributes*/
+img[alt="portrait"]{
+    width:100%;
+    scale:90%;
+    border-style: solid;
+    border-width: 3px;
+    border-color:grey;
+    border-radius:100%;
+    margin:0;
+    padding:0;
+    justify-self: center;
+}
+hr{
+    color: white;
+    margin-top:20vh;
+    margin-bottom:2vh;
+}
+.socials{
+    margin: 0 auto;
+}
+svg[alt="social"]{
+    color:white;
+    margin: 2vw;
+    margin-top:0;
+    margin-bottom:0;
+}
+svg[alt="social"]:hover{
+    cursor: pointer;
+    color:var(--titleFontColor);
+}
+/*footer attributes*/
+.footerContainer{
+    display:grid;
+    background-color: var(--pageBackground);
+}
