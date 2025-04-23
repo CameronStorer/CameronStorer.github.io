@@ -26,7 +26,6 @@ body {
 h1{
     color:var(--titleFontColor);
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: lighter;
     margin-bottom:.01vh;
     text-align:center;
 }
@@ -45,6 +44,13 @@ h1[alt="title"]:hover{
 p {
     color:var(--generalPageFontColor);
     font-family:Arial, Helvetica, sans-serif;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
 /* In this style sheet, 3 areas will be utilized:
     Toolbar
@@ -95,6 +101,7 @@ button[alt="toolbar"]:hover{
 .bio{
     display:grid;
     grid-template-columns: 1fr 1.3fr;
+    column-gap: 1%;
     max-width:75vh;
     margin:0 auto;
     background-color: var(--bioBackground);
