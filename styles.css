@@ -184,7 +184,7 @@ svg[alt="social"]:hover{
 @media (max-width: 600px) {
 
     a[alt="title"]{
-        font-size:300%;
+        font-size:270%;
         margin-top:60px;
     }
 
