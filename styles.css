@@ -180,7 +180,6 @@ svg[alt="social"]:hover{
     animation-duration: .5s;
 }
 
-
 /* Mobile styles (max-width: 767px) */
 @media (max-width: 600px) {
 
@@ -192,10 +191,6 @@ svg[alt="social"]:hover{
     .toolbarContainer{
         width:35%;
         min-width:350px;
-        border-style:solid;
-        border-width:1*2%;
-        border-radius:30px;
-        border-color: var(--generalPageFontColor);
         margin-bottom:60px;
     }
 
@@ -217,8 +212,6 @@ svg[alt="social"]:hover{
         width:100%;
         max-width:750px;
         margin:0 auto;
-        background-color: var(--bioBackground);
-        padding:0;
         border-radius:30px;
         margin-bottom:6%;
     }
@@ -226,7 +219,6 @@ svg[alt="social"]:hover{
     p[alt="bio"]{
         margin-left: 4%;
         margin-right: 4%;
-        color: var(--bioFontColor);
         align-self:center;
         justify-self:center;
         font-size:2*2%;
@@ -235,16 +227,9 @@ svg[alt="social"]:hover{
     img[alt="portrait"]{
         width:50%;
         scale:90%;
-        border-style: solid;
-        border-width: 3px;
-        border-color:grey;
-        border-radius:100vw;
         margin:0;
         padding:0;
         justify-self: center;
-    }
-    hr{
-        color: white;
     }
 
     .mobile-only {
