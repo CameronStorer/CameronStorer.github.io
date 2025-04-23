@@ -1,6 +1,6 @@
 /*remove excess space*/
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 /*set some default colors*/
@@ -22,37 +22,19 @@ body {
     background-color: var(--pageBackground);
     color:var(--generalPageFontColor);
 }
-/*define header attributes*/
-h1{
+a[alt="title"]{
+    display:inline-block;
     color:var(--titleFontColor);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 4.5vw;
-    font-weight:lighter;
-    margin-bottom:.8vw;
-    text-align:center;
-}
-h1[alt="title"]{
-    color:var(--titleFontColor);
-    font-size:9vw;
+    font-size:475%;
     font-family: serif;
     font-weight:bold;
-    margin:0;    
+    padding:0;
+    margin-bottom:0;
+    margin-top:60px;
 }
-a[alt="title"]{
-    display:grid;
-    width:67vw;
-    margin: auto;
-    margin-bottom:1vw;
-    margin-top:10vw;
-}
-h1[alt="title"]:hover{
+a[alt="title"]:hover{
     color: var(--generalPageFontHoverColor);
     cursor: pointer;
-}
-/*define paragraph attributes*/
-p {
-    color:var(--generalPageFontColor);
-    font-family:Arial, Helvetica, sans-serif;
 }
 a:link {
     text-decoration: none;
@@ -72,15 +54,23 @@ a:visited {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
-    align-self: center;
     background-color: var(--toolbarBackground);
-    width:68vw;
-    height:4vw;
+    width:35%;
+    min-width:600px;
     border-style:solid;
-    border-width:1%;
+    border-width:1*2%;
     border-radius:30px;
     border-color: var(--generalPageFontColor);
-    margin-bottom:7vw;
+    margin-bottom:60px;
+}
+.toolbarContainer:hover{
+    animation-name:toolbarHover;
+    animation-duration: .6s;
+    height:4vh;
+}
+@keyframes toolbarHover {
+    from{height:3vh;}
+    to {height:4vh;}
 }
 /*toolbar button attributes*/
 button[alt="toolbar"]{
@@ -88,78 +78,185 @@ button[alt="toolbar"]{
     color: var(--toolbarButtonFontColor);
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 1.9vw;
+    font-size: 1.9*2%;
     align-self:center;
     border:none;
+    height:3vh;
     margin:0;
-    padding: 1vw;
-    height:4vw;
+    padding: 1%;
 }
 /*toolbar button hover animation*/
 @keyframes toolbarButtonHover {
-    from {background-color: var(--toolbarButtons);}
-    to {background-color: var(--toolbarButtonHover);}
+    from {background-color: var(--toolbarButtons);
+        height:3vh;}
+    to {background-color: var(--toolbarButtonHover);
+        height:4vh;}
 }
 /*toolbar button hover attributes*/
 button[alt="toolbar"]:hover{
     cursor: pointer;
     animation-name:toolbarButtonHover;
-    animation-duration: 1s;
+    animation-duration: .6s;
+    height:4vh;
     background-color: var(--toolbarButtonHover);
-
+}
+/*define header attributes*/
+h1{
+    color:var(--titleFontColor);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 220%;
+    font-weight:lighter;
+    margin-bottom:.5%;
+    text-align:center;
+}
+/*define paragraph attributes*/
+p {
+    color:var(--generalPageFontColor);
+    font-family:Arial, Helvetica, sans-serif;
 }
 /*biography container attributes*/
 .bio{
     display:grid;
     grid-template-columns: 1fr 1.3fr;
-    column-gap: 2vw;
-    width:68vw;
+    column-gap: 2%;
+    width:68%;
+    max-width:750px;
     margin:0 auto;
     background-color: var(--bioBackground);
     padding:0;
     border-radius:30px;
+    margin-bottom:6%;
 }
 /*bio font attributes*/
 p[alt="bio"]{
     color: var(--bioFontColor);
     align-self:center;
-    font-size:2vw;
+    justify-self:right;
+    font-size:2*2%;
 }
 /*bio image attributes*/
 img[alt="portrait"]{
-    width:25vw;
+    width:90%;
     scale:90%;
     border-style: solid;
     border-width: 3px;
     border-color:grey;
-    border-radius:100%;
+    border-radius:100vw;
     margin:0;
     padding:0;
-    justify-self: center;
+    justify-self: left;
 }
 hr{
     color: white;
-    margin-top:23vw;
-    margin-bottom:3vw;
 }
 .socials{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    justify-items:center;
     margin: 0 auto;
-    margin-bottom:.3vw;
+    margin-bottom:.3*2%;
+}
+a[alt="social"]{
+    margin-left:2%;
+    margin-right:2%;
 }
 svg[alt="social"]{
     color:white;
-    width:3vw;
-    height:3vw;
-    margin: 2vw;
-    margin-top:0;
-    margin-bottom:0;
+    width:100%;
+    height:100%;
+    padding: 1%;
+}
+/*give svg's a hover animation*/
+@keyframes svgHover {
+    from {width:100%;height:100%;}
+    to {width:125%;height:125%;}
 }
 svg[alt="social"]:hover{
     cursor: pointer;
     color:var(--titleFontColor);
+    animation-name: svgHover;
+    width:125%;height:125%;
+    animation-duration: .5s;
 }
-/*footer attributes*/
-.footerContainer{
-    display:grid;
-    background-color: var(--pageBackground);
+
+
+/* Mobile styles (max-width: 767px) */
+@media (max-width: 600px) {
+
+    a[alt="title"]{
+        font-size:300%;
+        margin-top:60px;
+    }
+
+    .toolbarContainer{
+        width:35%;
+        min-width:350px;
+        border-style:solid;
+        border-width:1*2%;
+        border-radius:30px;
+        border-color: var(--generalPageFontColor);
+        margin-bottom:60px;
+    }
+
+    /*toolbar button attributes*/
+    button[alt="toolbar"]{
+        height:3vh;
+        margin:0;
+        padding: 1%;
+    }
+    h1{
+        font-size: 190%;
+        margin-bottom:1%;
+    }
+    /*biography container attributes*/
+    .bio{
+        display:grid;
+        grid-template-columns: 1fr;
+        column-gap: 2%;
+        width:100%;
+        max-width:750px;
+        margin:0 auto;
+        background-color: var(--bioBackground);
+        padding:0;
+        border-radius:30px;
+        margin-bottom:6%;
+    }
+    /*bio font attributes*/
+    p[alt="bio"]{
+        margin-left: 4%;
+        margin-right: 4%;
+        color: var(--bioFontColor);
+        align-self:center;
+        justify-self:center;
+        font-size:2*2%;
+    }
+    /*bio image attributes*/
+    img[alt="portrait"]{
+        width:50%;
+        scale:90%;
+        border-style: solid;
+        border-width: 3px;
+        border-color:grey;
+        border-radius:100vw;
+        margin:0;
+        padding:0;
+        justify-self: center;
+    }
+    hr{
+        color: white;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* Desktop/Tablet styles (min-width: 768px) */
+@media (min-width: 601px) {
+
 }
