@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="https://cameronstorer.com" target="_parent"><h1 alt="title">Cameron Storer</h1>
+    <a alt="title" href="https://cameronstorer.com" target="_parent"><h1 alt="title">Cameron Storer</h1>
 </a>
     <div class="toolbarContainer">
         <button id="projects" alt="toolbar" style="border-radius: 30px 0px 0px 30px;">Projects</button>
@@ -25,10 +25,10 @@
                     if (buttonNames.includes(event.target.id)){ // Figure out which button
                         if (event.target.id != "resume"){
                         window.parent.location.href = "https://cameronstorer.com/" + event.target.id;
-                    } else {
-                        window.open("cameronstorer.com/resume.pdf", "_blank");
+                        } else {
+                            window.open("cameronstorer.com/resume.pdf", "_blank");
+                        }
                     }
-                }
                 }
             });
         </script>
@@ -54,7 +54,7 @@
             <a href="https://cameronstorer.com/contact-me" target="_parent"><svg id="send"alt="social" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg></a>
             <a href="https://cameronstorer.com/resume.pdf" target="_blank"><svg id="file-user"alt="social" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-user-icon lucide-file-user"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M15 18a3 3 0 1 0-6 0"/><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><circle cx="12" cy="13" r="2"/></svg></a>
         </div>
-        <p style="text-align: center;font-size:smaller;">Designed & Developed by Cameron Storer © 2025</p>
+        <p style="text-align: center;font-size:1.6vw;">Designed & Developed by Cameron Storer © 2025</p>
     </div>
 </body>
 </html>
