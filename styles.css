@@ -8,13 +8,13 @@ html, body {
     --toolbarBackground: var(--pageBackground);
     --toolbarButtons: var(--toolbarBackground);
     --toolbarButtonHover: var(--titleFontColor);
-    --toolbarButtonFontColor: rgb(255, 255, 255);
+    --toolbarButtonFontColor: white;
     --pageBackground:  rgb(0, 30, 62);
     --titleFontColor: rgb(0, 123, 255);
-    --generalPageFontColor: rgb(255, 255, 255);
+    --generalPageFontColor: white;
     --generalPageFontHoverColor: rgb(125, 188, 255);
     --bioBackground: var(--pageBackground);
-    --bioFontColor: rgb(255, 255, 255);
+    --bioFontColor: white;
     --footerBackground:  rgb(0, 123, 255);
 }
 /*define body attributes*/
