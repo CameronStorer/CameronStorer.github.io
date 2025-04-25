@@ -15,7 +15,6 @@ html, body {
     --generalPageFontHoverColor: rgb(125, 188, 255);
     --bioBackground: var(--pageBackground);
     --bioFontColor: white;
-    --footerBackground:  rgb(0, 123, 255);
 }
 /*define body attributes*/
 body {
@@ -24,6 +23,7 @@ body {
 }
 .titleText{
     display:inline-block;
+    text-decoration: none;
     color:var(--titleFontColor);
     font-size:475%;
     font-family: serif;
@@ -34,13 +34,6 @@ body {
 .titleText:hover{
     color: var(--generalPageFontHoverColor);
     cursor: pointer;
-}
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
 }
 /* In this style sheet, 3 areas will be utilized:
     Toolbar
@@ -56,20 +49,17 @@ a:visited {
     width:35%;
     min-width:600px;
     max-width:700px;
+    height:3vh;
     min-height:20px;
     border-style:solid;
     border-width:1*2%;
     border-radius:30px;
+    overflow: hidden;
     border-color: var(--generalPageFontColor);
+    transition: all .6s;
 }
 .toolbarContainer:hover{
-    animation-name:toolbarHover;
-    animation-duration: .6s;
     height:4vh;
-}
-@keyframes toolbarHover {
-    from{height:3vh;}
-    to {height:4vh;}
 }
 /*toolbar button attributes*/
 .toolbarButton{
@@ -80,28 +70,23 @@ a:visited {
     font-size: 1.9*2%;
     align-self:center;
     border:none;
-    height:3vh;
+    height:100%;
+    min-height:20px;
     margin:0;
     padding: 1%;
-}
-/*toolbar button hover animation*/
-@keyframes toolbarButtonHover {
-    from {background-color: var(--toolbarButtons);
-        height:3vh;}
-    to {background-color: var(--toolbarButtonHover);
-        height:4vh;}
+    transition: all .6s;
 }
 /*toolbar button hover attributes*/
 .toolbarButton:hover{
     cursor: pointer;
-    animation-name:toolbarButtonHover;
-    animation-duration: .6s;
     height:4vh;
+    transform:scale(1.25);
+    z-index: 1;
     background-color: var(--toolbarButtonHover);
 }
 /*define header attributes*/
 h1{
-    color:var(--titleFontColor);
+    color:var(--generalPageFontHoverColor);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 220%;
     font-weight:lighter;
@@ -132,6 +117,11 @@ p {
     font-size:2*2%;
     margin:auto;
     line-height: 1.5;
+}
+.bioHr{
+    width:100px; 
+    margin:0 auto;
+    color: lightgray;
 }
 /*bio image attributes*/
 .bioImage{
@@ -166,18 +156,14 @@ hr{
     width:100%;
     height:100%;
     padding: 1%;
-}
-/*give svg's a hover animation*/
-@keyframes svgHover {
-    from {width:100%;height:100%;}
-    to {width:125%;height:125%;}
+    transition: all 0.15s;
 }
 .socialSvg:hover{
     cursor: pointer;
     color:var(--titleFontColor);
-    animation-name: svgHover;
-    width:125%;height:125%;
-    animation-duration: .5s;
+    /* width:125%;
+    height:125%; */
+    transform:scale(1.5);
 }
 
 /* Mobile styles (max-width: 767px) */
@@ -210,6 +196,9 @@ hr{
         max-width:750px;
         margin:0 auto;
         border-radius:30px;
+    }
+    .bioHr{
+        width:60px; 
     }
     /*bio font attributes*/
     .bioParagraph{
