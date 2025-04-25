@@ -140,6 +140,11 @@ p {
 .bioImage:hover{
     transform:scale(110%);
 }
+.blue {
+    text-decoration: none;
+    color: var(--generalPageFontHoverColor);
+    font-weight:lighter;
+}
 hr{
     color: white;
     margin:0;
