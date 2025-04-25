@@ -135,6 +135,10 @@ p {
     margin:0;
     padding:0;
     justify-self: left;
+    transition: transform 0.7s;
+}
+.bioImage:hover{
+    transform:scale(110%);
 }
 hr{
     color: white;
