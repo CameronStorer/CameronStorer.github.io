@@ -4,12 +4,12 @@
 
 ## Table of Contents
 
-  * [About](https://www.google.com/search?q=%23about)
-  * [Features](https://www.google.com/search?q=%23features)
-  * [Technologies Used](https://www.google.com/search?q=%23technologies-used)
-  * [How to View](https://www.google.com/search?q=%23how-to-view)
-  * [Contact](https://www.google.com/search?q=%23contact)
-  * [License](https://www.google.com/search?q=%23license)
+  * [About](#about)
+  * [Features](#features)
+  * [Technologies Used](#technologies-used)
+  * [How to View](#how-to-view)
+  * [Contact](#contact)
+  * [License](#license)
 
 -----
 
@@ -35,17 +35,17 @@ This portfolio site is built to offer a seamless experience for visitors looking
 
 This portfolio site is crafted using the foundational pillars of web development:
 
-  * **HTML5:** Used for structuring the content and semantics of the web pages, ensuring a clear and accessible document flow.
-  * **CSS3:** Employed for styling, layout, and bringing the visual design to life. This includes modern techniques like **Flexbox** and **Grid** to create robust and responsive layouts.
-  * **JavaScript (ES6+):** Powers the interactive elements, handles dynamic content updates, and enhances the overall user experience.
+  * **HTML:** Used for structuring the content and semantics of the web pages, ensuring a clear and accessible document flow.
+  * **CSS:** Employed for styling, layout, and bringing the visual design to life. This includes modern techniques like **Flexbox** and **Grid** to create robust and responsive layouts.
+  * **JavaScript:** Powers the interactive elements, handles dynamic content updates, and enhances the overall user experience.
 
 -----
 
 ## How to View
 
-This portfolio is hosted directly on GitHub Pages, so you can view it live in your web browser:
+This portfolio is hosted on GitHub Pages, and you can view it live in your web browser:
 
-1.  Simply navigate to: **`https://CameronStorer.github.io`**
+1.  Simply navigate to: **`https://cameronstorer.com`**
 
 -----
 
@@ -53,14 +53,8 @@ This portfolio is hosted directly on GitHub Pages, so you can view it live in yo
 
 I'm always open to new opportunities and collaborations. Feel free to reach out to me through:
 
-  * **Email:** [Your Professional Email Address]
-  * **LinkedIn:** [Link to your LinkedIn Profile]
-  * **GitHub:** [Link to your GitHub Profile (if different from this repo)]
-
------
-
-## License
-
-This project is open-sourced under the MIT License. See the [LICENSE](https://www.google.com/search?q=LICENSE) file for more details.
+  * **Email:** [contact@cameronstorer.com]
+  * **LinkedIn:** [[Link to your LinkedIn Profile](https://www.linkedin.com/in/cameron-storer-4b3844294/)]
+  * **GitHub:** [Link to your GitHub Profile]
 
 -----
