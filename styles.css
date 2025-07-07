@@ -124,7 +124,7 @@ p {
     margin:0 auto;
     color: lightgray;
 }
-/*bio image attributes*/
+/* bio image attributes */
 .bioImage{
     width:90%;
     scale:90%;
@@ -141,10 +141,10 @@ p {
 .bioImage:hover{
     transform:scale(110%);
 }
-.blue {
+.highlight-blue {
     text-decoration: none;
+    font-weight:normal;
     color: var(--generalPageFontHoverColor);
-    font-weight:lighter;
 }
 hr{
     color: white;
