@@ -6,7 +6,6 @@
    or more ideally, define these in tailwind.config.ts for full Tailwind integration.
    For now, we'll keep them here for direct translation. */
 :root {
-
     --titleColor: rgb(0, 123, 255);
     --titleHoverColor: rgb(125, 188, 255);
  
