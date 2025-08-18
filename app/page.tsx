@@ -34,16 +34,15 @@ const App = () => {
   return (
     <div className="bg-gray-900 text-gray-100 font-sans antialiased">
       {/* --- Navigation Bar --- */}
-      <div className="bg-gray-800 text-5xl md:text-6xl m-auto font-bold font-serif text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="https://cameronstorer.com">Cameron Storer</a></div>
+      <div className="bg-gray-800 text-[2.625rem] md:text-6xl m-auto font-bold font-serif text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="https://cameronstorer.com">Cameron Storer</a></div>
       <header className="bg-gray-800 shadow-xl sticky top-0 z-50">
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-5 grid items-center justify-center">
           {/* Desktop Navigation Links */}
           <div className="md:flex items-center border-teal-400 border-3 rounded-2xl">
-            {/* <a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors pl-7">About</a>*/}
-            <a href="#about" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 rounded-full rounded-r-none px-7">About</a>
-            <a href="#projects" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 px-7">Projects</a>
-            <a href="#skills" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 px-7">Skills</a>
-            <a href="#contact" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 rounded-full rounded-l-none px-7">Contact</a>
+            <a href="#about" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 rounded-full rounded-r-none py-1 md:py-0 px-4 md:px-7">About</a>
+            <a href="#projects" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 py-1 md:py-0 px-4 md:px-7">Projects</a>
+            <a href="#skills" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 py-1 md:py-0 px-4 md:px-7">Skills</a>
+            <a href="#contact" className="font-bold text-gray-300 hover:bg-teal-400 hover:text-gray-900 duration-200 py-1 md:py-0 rounded-full rounded-l-none px-4 md:px-7">Contact</a>
           </div>
         </nav>
       </header>
