@@ -55,7 +55,7 @@ const App = () => {
             <h2 className="text-3xl font-bold text-center mb-6 text-teal-400">About Me</h2>
             <div className="flex flex-col md:flex-row items-center justify-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
               <div className="flex-shrink-0 mb-6">
-                <Image src="../public/portrait.webp" className="rounded-full w-45 h-45 md:w-64
+                <Image src="/portrait.webp" className="rounded-full w-45 h-45 md:w-64
                 md:h-64 object-cover border-4 border-gray-700 shadow-xl" alt="portrait"
                 width={250} height={250}/>
               </div>
