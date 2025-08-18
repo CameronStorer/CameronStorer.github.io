@@ -55,7 +55,7 @@ const App = () => {
             <h2 className="text-3xl font-bold text-center mb-6 text-teal-400">About Me</h2>
             <div className="flex flex-col md:flex-row items-center justify-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
               <div className="flex-shrink-0 mb-6">
-                <Image src="/portrait.webp" className="rounded-full w-45 h-45 md:w-64
+                <Image src="../public/portrait.webp" className="rounded-full w-45 h-45 md:w-64
                 md:h-64 object-cover border-4 border-gray-700 shadow-xl" alt="portrait"
                 width={250} height={250}/>
               </div>
@@ -66,10 +66,10 @@ const App = () => {
                   and am eager to expand my knowledge in the realm of Cybersecurity.
                 </p><p className="mb-4">
                   Major-specific courses that I've completed include Data Structures, 
-                  Systems Programming, and Operating Systems. Furthermore, I am 
-                  proficient in the languages Python, Java, and C. Throughout my 
+                  Systems Programming, and Operating Systems. Throughout my 
                   career, I have also gained hands-on hardware, software, and cyber
-                  security experience at companies such as Cameron LNG.
+                  security experience at companies such as Cameron LNG. Furthermore, I am 
+                  proficient in the languages Python, Java, and C.
                 </p><p>
                   Aside from programming, some of my hobbies include fishing,
                   jogging, and sketching.
