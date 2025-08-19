@@ -10,7 +10,8 @@ const App = () => {
   const projects = [
     {
       title: 'Automated Pie Cutter',
-      description: 'A machine with the purpose of cutting pies into a user-defined number of equally sized slices; created by 2 colleagues and I for presentation at the 2024 Spring COES freshman expo.',
+      description: 'A machine with the purpose of cutting pies \
+      into a user-defined number of equally sized slices; created by 2 colleagues and I for presentation at the 2024 Spring COES freshman expo.',
       tech: ['Python', 'Circuitry', 'GPIO', 'Motors', '3D printing/modelling'],
       github: '#',
       live: '#',
