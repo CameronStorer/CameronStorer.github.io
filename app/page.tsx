@@ -67,7 +67,7 @@ const App = () => {
                 </p><p className="mb-4">
                   Major-specific courses that I've completed include Data Structures, 
                   Systems Programming, and Operating Systems. Throughout my 
-                  career, I have also gained hands-on hardware, software, and cyber
+                  career, I have gained hands-on hardware, software, and cyber
                   security experience at companies such as Cameron LNG. Furthermore, I am 
                   proficient in the languages Python, Java, and C.
                 </p><p>
@@ -88,8 +88,8 @@ const App = () => {
         </section>
 
         {/* --- Projects Section --- */}
-        <section id="projects" className="py-20  bg-gray-800 scroll-mt-10">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="projects" className="py-20 pb-10 bg-gray-800 scroll-mt-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-38 2xl:px-68">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">My Projects</h2>
             <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
@@ -116,7 +116,7 @@ const App = () => {
                 </div>
               ))}
               </div>
-              <div className="mt-8 flex justify-center">
+              <div className="mt-10 flex justify-center">
                 <a href="#projects" className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-400 transition-colors transform hover:scale-105">
                   See more
                 </a> 
@@ -125,8 +125,8 @@ const App = () => {
         </section>
 
         {/* --- Skills Section --- */}
-        <section id="skills" className="py-20 scroll-mt-10">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="skills" className="py-20 bp-10 scroll-mt-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-58 xxl:px-70">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">Skills</h2>
             <div className="flex flex-wrap justify-center gap-4 text-center">
               {['Python', 'Java', 'C#', 'HTML', 'Tailwind CSS', 'JavaScript', 
@@ -164,7 +164,7 @@ const App = () => {
       </main>
 
       {/* --- Footer --- */}
-      <footer className=" text-gray-400 py-6 text-center mt-20">
+      <footer className="text-gray-400 py-6 text-center mt-5">
         <p>&copy; {new Date().getFullYear()} Cameron Storer. All rights reserved.</p>
       </footer>
     </div>
