@@ -33,9 +33,19 @@ const App = () => {
   ];
 
   return (
+    
     <div className="bg-gray-900 text-gray-100 font-sans antialiased">
+
+              {/* --- Tech Blog Ad --- */}
+                <section className="py-1 pb-0 bg-teal-400">
+          <div className="container bg-teal-400 w-screen px-4 sm:px-6 lg:px-8">
+            <h2 className="text-1xl text-center m-0 w-screen text-gray-900">Check out my new <a className="text-white italic" href="/blog" target="_blank" 
+            rel="noopener noreferrer">Tech Blog</a></h2>
+          </div>
+        </section>
+
       {/* --- Navigation Bar --- */}
-      <div className="bg-gray-800 text-[2.625rem] md:text-6xl m-auto font-bold font-serif text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="https://cameronstorer.com">Cameron Storer</a></div>
+      <div className="bg-gray-800 text-[2.625rem] md:text-6xl m-auto font-bold font-serif text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="/">Cameron Storer</a></div>
       <header className="bg-gray-800 shadow-xl sticky top-0 z-50">
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-5 grid items-center justify-center">
           {/* Desktop Navigation Links */}
@@ -50,7 +60,7 @@ const App = () => {
 
       <main>
         {/* --- About Me Section --- */}
-        <section id="about" className="py-10 scroll-mt-35">
+        <section id="about" className="py-10 scroll-mt-17">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-6 text-teal-400">About Me</h2>
             <div className="flex flex-col md:flex-row items-center justify-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
@@ -88,7 +98,7 @@ const App = () => {
         </section>
 
         {/* --- Projects Section --- */}
-        <section id="projects" className="py-20 pb-10 bg-gray-800 scroll-mt-10">
+        <section id="projects" className="py-20 pb-10 bg-gray-800 scroll-mt-5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-38 2xl:px-68">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">My Projects</h2>
             <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -125,11 +135,11 @@ const App = () => {
         </section>
 
         {/* --- Skills Section --- */}
-        <section id="skills" className="py-20 bp-10 scroll-mt-10">
+        <section id="skills" className="py-20 bp-10 scroll-mt-5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-58 xxl:px-70">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">Skills</h2>
             <div className="flex flex-wrap justify-center gap-4 text-center">
-              {['Python', 'Java', 'C#', 'HTML', 'Tailwind CSS', 'JavaScript', 
+              {['Python', 'Java', 'C#', 'Go', 'HTML', 'Tailwind CSS', 'JavaScript', 
                 'Bash Scripting', 'PowerShell Scripting', 'Git',
                 'Microsoft Acitve Directory', 'Microsoft SCCM',
                 ].map((skill, index) => (
@@ -142,7 +152,7 @@ const App = () => {
         </section>
 
         {/* --- Contact Section --- */}
-        <section id="contact" className="py-20 bg-gray-800 scroll-mt-10">
+        <section id="contact" className="py-20 bg-gray-800 scroll-mt-5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4 text-teal-400">Get In Touch</h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
