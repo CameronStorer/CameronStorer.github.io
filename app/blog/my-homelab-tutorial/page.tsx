@@ -71,7 +71,7 @@ const App = () => {
                   Here is a short outline that I have created to describe what the process of setting up your service can look like:
                   <br/><br/>
 
-                    <ul class="list-decimal list-inside leading-loose bg-gray-800 p-5 border-1 rounded-lg ">
+                    <ul className="list-decimal list-inside leading-loose bg-gray-800 p-5 border-1 rounded-lg ">
                       <li>Find some old computer lying around (or buy dedictated server hardware)</li>
                       <li>Re-image the machine with an operating system of your choice (more on this later)</li>
                       <li>Research the service that you would like to self-host.</li>
