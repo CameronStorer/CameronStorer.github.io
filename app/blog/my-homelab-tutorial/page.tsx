@@ -117,7 +117,7 @@ const App = () => {
             </div>
           </div>
             <div className="mt-1 flex justify-center space-x-4">
-              <p className="text-red-500 font-bold py-3 px-8 rounded-full shadow-lg ">
+              <p className="text-red-500 font-bold py-3 px-8 ">
                 Thanks for reading!
               </p>
             </div>

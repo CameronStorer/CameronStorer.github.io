@@ -13,22 +13,22 @@ const App = () => {
       description: 'A machine with the purpose of cutting pies \
       into a user-defined number of equally sized slices; created by 2 colleagues and I for presentation at the 2024 Spring COES freshman expo.',
       tech: ['Python', 'Circuitry', 'GPIO', 'Motors', '3D printing/modelling'],
-      github: '#',
-      live: '#',
+      github: '#projects',
+      live: '#projects',
     },
     {
       title: 'This Portfolio Site',
       description: 'A web portfolio built to display my acedemic achievements using modern web technologies.',
       tech: ['React', 'Tailwind CSS', 'Node.js'],
-      github: '#',
-      live: '#',
+      github: '#projects',
+      live: '#projects',
     },    
     {
       title: 'Cameron LNG Virtual Helpdesk',
       description: 'During my time interning at Cameron LNG, I began development of a software to reduce the number of unnecessary calls into the IT office.',
       tech: ['Python', 'Tkinter'],
-      github: '#',
-      live: '#',
+      github: '#projects',
+      live: '#projects',
     },    
   ];
 
@@ -113,12 +113,13 @@ const App = () => {
                       </span>
                     ))}
                   </div>
+                  {/*target="_blank" rel="noopener noreferrer"*/}
                   <div className="flex space-x-4">
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
+                    <a href={project.live} className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
                       <ArrowUpRight size={20} className="mr-2" />
                       Learn More
                     </a>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
+                    <a href={project.github}  className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
                       <Github size={20} className="mr-2" />
                       GitHub
                     </a>
