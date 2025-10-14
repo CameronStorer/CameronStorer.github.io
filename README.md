@@ -1,6 +1,6 @@
 ------
 
-# CameronStorer.github.io
+# CameronStorer.com
 
 ## Table of Contents
 
@@ -9,7 +9,6 @@
   * [Technologies Used](#technologies-used)
   * [How to View](#how-to-view)
   * [Contact](#contact)
-  * [License](#license)
 
 -----
 
@@ -35,9 +34,9 @@ This portfolio site is built to offer a seamless experience for visitors looking
 
 This portfolio site is crafted using the foundational pillars of web development:
 
-  * **HTML:** Used for structuring the content and semantics of the web pages, ensuring a clear and accessible document flow.
-  * **CSS:** Employed for styling, layout, and bringing the visual design to life. This includes modern techniques like **Flexbox** and **Grid** to create robust and responsive layouts.
-  * **JavaScript:** Powers the interactive elements, handles dynamic content updates, and enhances the overall user experience.
+  * **Next.js (React Framework):** Used for static site generation (SSG)
+  * **HTML & JavaScript:** HTML provides the structure and semantics, while JavaScript powers the interactivity.
+  * **Tailwind CSS:** Employed for styling and design. It's a utility-first CSS framework that accelerates development by composing designs directly in the markup using pre-defined classes, ensuring a consistent and responsive visual style.
 
 -----
 
