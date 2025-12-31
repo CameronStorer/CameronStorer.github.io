@@ -6,31 +6,49 @@ import { Menu, X, Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
 // Main App component for the portfolio
 const App = () => {
 
+  // How many projects to render at once
+  const [visCount, setVisCount] = useState(3);
   // List out projects
   const projects = [
     {
       title: 'Automated Pie Cutter',
       description: 'A machine with the purpose of cutting pies \
       into a user-defined number of equally sized slices; created by 2 colleagues and I for presentation at the 2024 Spring COES freshman expo.',
-      tech: ['Python', 'Circuitry', 'GPIO', 'Motors', '3D printing/modelling'],
-      github: '#projects',
-      live: '#projects',
+      tags: ['Python', 'Circuitry', 'GPIO', 'Motors', '3D printing/modelling'],
+      link: 'https://www.linkedin.com/posts/cameron-storer0_coes-activity-7227456011039612928-UMGU/',
+      github: 'https://github.com/CameronStorer/Automated-Pie-Cutter'
     },
     {
       title: 'This Portfolio Site',
-      description: 'A web portfolio built to display my acedemic achievements using modern web technologies.',
-      tech: ['React', 'Tailwind CSS', 'Node.js'],
-      github: '#projects',
-      live: '#projects',
+      description: 'Web portfolio built to display my acedemic achievements using modern web technologies. See the souce code below.',
+      tags: ['React', 'Tailwind CSS', 'Node.js', 'TypeScript'],
+      link: null,
+      github: 'https://github.com/CameronStorer/CameronStorer.github.io'
     },    
     {
       title: 'Cameron LNG Virtual Helpdesk',
-      description: 'During my time interning at Cameron LNG, I began development of a software to reduce the number of unnecessary calls into the IT office.',
-      tech: ['Python', 'Tkinter'],
-      github: '#projects',
-      live: '#projects',
+      description: 'During my time interning at Cameron LNG, I developed a software to reduce the number of unnecessary calls into the IT office.',
+      tags: ['Python', 'Tkinter'],
+      link: 'https://www.linkedin.com/posts/cameron-storer0_proudtobecameronlng-activity-7228131902304501760-PkHX/',
+      github: null,
+    },    
+    {
+      title: 'Universal Pong',
+      description: 'Classic pong arcade game coded nearly identically in a variety of programming languages',
+      tags: ['Python', 'Java', 'etc.'],
+      link: null,
+      github: 'https://github.com/CameronStorer/Universal-Pong'
+    },    
+    {
+      title: 'Satsuma Player',
+      description: 'Multi-platform media player app with ambitious future plans including server sync functionality',
+      tags: ['Dart', 'Flutter Framework'],
+      link: null,
+      github: 'https://github.com/CameronStorer/satsuma_player'
     },    
   ];
+  // Projects that should be rendered currently
+  const visProjects = projects.slice(0, visCount);
 
   return (
     
@@ -46,8 +64,7 @@ const App = () => {
       </section>
 
       {/* --- Navigation Bar --- */}
-      <div className="bg-gray-800 text-[2.625rem] md:text-6xl m-auto font-bold font-serif
-      text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="/">Cameron Storer</a></div>
+      <div className="bg-gray-800 text-[2.625rem] md:text-6xl m-auto font-bold font-serif text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="/">Cameron Storer</a></div>
       <header className="bg-gray-800 shadow-xl sticky top-0 z-50">
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-5 grid items-center justify-center">
           {/* Desktop Navigation Links */}
@@ -75,12 +92,12 @@ const App = () => {
                 <p className="mb-4">
                   As a third-year Computer Science student at <a href="https://www.latech.edu/" target='blank'>Louisiana
                   Tech University</a>, I have a passion for technology
-                  and am eager to expand my knowledge in the realm of Cybersecurity.
+                  and am eager to expand my knowledge in the realm of Cybersecurity and software development.
                 </p><p className="mb-4">
-                  Major-specific courses that I've completed include Data Structures, 
+                  Major-specific courses that I've completed include Advanced Data Structures, 
                   Systems Programming, and Operating Systems. Throughout my 
                   career, I have gained hands-on hardware, software, and cyber
-                  security experience at companies such as Cameron LNG. Furthermore, I am 
+                  security experience at companies including Cameron LNG. Furthermore, I am 
                   proficient in the languages Python, Java, and C.
                 </p><p>
                   Aside from programming, some of my hobbies include fishing,
@@ -104,36 +121,61 @@ const App = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-38 2xl:px-68">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">My Projects</h2>
             <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {projects.map((project, index) => (
+              {/* map the previously defined 'projects' array values to these visible entities */}
+              {visProjects.map((project, index) => (
                 <div key={index} className="bg-gray-800 rounded-xl shadow-xl p-6 transform transition-transform hover:scale-105">
                   <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, techIndex) => (
-                      <span key={techIndex} className="bg-gray-700 text-teal-400 text-sm font-medium px-3 py-1 rounded-full">
-                        {tech}
+                    {project.tags.map((tag, tagIndex) => (
+                      <span key={tagIndex} className="bg-gray-700 text-teal-400 text-sm font-medium px-3 py-1 rounded-full">
+                        {tag}
                       </span>
                     ))}
                   </div>
-                  {/*target="_blank" rel="noopener noreferrer"*/}
-                  <div className="flex space-x-4">
-                    <a href={project.live} className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
-                      <ArrowUpRight size={20} className="mr-2" />
-                      Learn More
-                    </a>
-                    <a href={project.github}  className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
-                      <Github size={20} className="mr-2" />
-                      GitHub
-                    </a>
-                  </div>
+                  {/* logic to determine which links to dispay */}
+                  {/* in React, && = 'render the following is the left condition is true',
+                  || = 'render the following if either condition is true' */}
+                  {(project.link || project.github) && (
+                    <div className="flex space-x-4">
+                      {/* LinkedIn */}
+                      {project.link && (
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
+                          <ArrowUpRight size={20} className="mr-2" />
+                          Learn More
+                        </a>
+                      )}
+                      {/* GitHub */}
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-teal-400 transition-colors">
+                          <Github size={20} className="mr-2" />
+                          GitHub
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               ))}
               </div>
-              <div className="mt-10 flex justify-center">
-                <a href="#projects" className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-400 transition-colors transform hover:scale-105">
+              {/* Expand to see more projects.
+              Only show this button if there are more hidden projects...
+              Once clicked, show 3 more hidden projects */}
+              <div className="mt-10 flex justify-center gap-2">
+              {visCount < projects.length && ( // if the visible count is less than the number of projects, show the button
+                <button onClick={() => setVisCount(prev => Math.min(prev + 3, projects.length))} // update the current visible number of projects by 3
+                  className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-400 transition-colors transform hover:scale-105">
                   See more
-                </a> 
-            </div>
+                </button> 
+              )}
+              {/* button to 'Show less' projects */}
+              {visCount > 3 && ( // if the visible count is more than 3, show this button
+                <button onClick={() => visCount > 6 ? setVisCount(prev => Math.min(prev + 3, projects.length)) // ternary operator is used to determine how many projects to remove
+                                                    : setVisCount(3)} // update the current visible number of projects by -3 if possible
+                  className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-400 transition-colors transform hover:scale-105">
+                  See less
+                </button> 
+              )}
+              </div>
           </div>
         </section>
 
@@ -142,7 +184,7 @@ const App = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-58 xxl:px-70">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">Skills</h2>
             <div className="flex flex-wrap justify-center gap-4 text-center">
-              {['Python', 'Java', 'C#', 'Go', 'HTML', 'Tailwind CSS', 'JavaScript', 
+              {['Python', 'Java', 'C#', 'Go', 'Dart', 'HTML', 'Tailwind CSS', 'JavaScript', 
                 'Bash Scripting', 'PowerShell Scripting', 'Git',
                 'Microsoft Acitve Directory', 'Microsoft SCCM',
                 ].map((skill, index) => (
