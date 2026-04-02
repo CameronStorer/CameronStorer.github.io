@@ -57,7 +57,7 @@ const App = () => {
       {/* --- Tech Blog Ad --- */}
       <section className="py-1 pb-0 bg-teal-400">
         <div className="container bg-teal-400 m-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-1xl text-center m-0 text-gray-900">Check out my new <a className="text-white italic"
+          <h2 className="text-1xl text-center m-0 text-gray-900">Check out my <a className="text-white italic"
            href="https://blog.cameronstorer.com" target="_blank" 
           rel="noopener noreferrer">Tech Blog</a></h2>
         </div>
