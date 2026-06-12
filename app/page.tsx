@@ -11,20 +11,20 @@ const App = () => {
   // List out projects
   const projects = [
     {
-      title:'Zono',
-      description:'Open-source mobile application for bringing friends together through real-time location sharing and interactive activities. \
-        Worked with a team of four as our project for the Software Engineering course (CSC 4033)',
-      tags: ['React', 'Supabase', 'Typescript'],
-      link: null,
-      github: 'https://github.com/CameronStorer/Zono-CSC4033'
-    },
-    {
       title: 'Satsuma Player',
       description: 'Multi-platform media player app with ambitious future plans including server sync functionality',
-      tags: ['Dart', 'Flutter Framework'],
+      tags: ['Dart', 'Flutter Framework', 'SQLite'],
       link: null,
       github: 'https://github.com/CameronStorer/satsuma_player'
     },    
+    {
+      title:'Zono',
+      description:'Mobile app to bring friends together through real-time location sharing and interactive activities. \
+        Four member project submission for Software Engineering (CSC 4033)',
+      tags: ['React', 'Typescript', 'Supabase'],
+      link: null,
+      github: 'https://github.com/CameronStorer/Zono-CSC4033'
+    },
     {
       title: 'Automated Pie Cutter',
       description: 'A machine with the purpose of cutting pies \
@@ -98,15 +98,15 @@ const App = () => {
               </div>
               <div className="flex-grow text-lg max-w-2xl">
                 <p className="mb-4">
-                  As a third-year Computer Science student at <a href="https://www.latech.edu/" target='blank'>Louisiana
+                  As a Senior Computer Science student at <a href="https://www.latech.edu/" target='blank'>Louisiana
                   Tech University</a>, I have a passion for technology
                   and am eager to expand my knowledge in the realm of Cybersecurity and software development.
                 </p><p className="mb-4">
                   Major-specific courses that I've completed include Advanced Data Structures, 
-                  Systems Programming, and Operating Systems. Throughout my 
+                  Systems Programming, and Applied Cryptography. Throughout my 
                   career, I have gained hands-on hardware, software, and cyber
-                  security experience at companies including Cameron LNG. Furthermore, I am 
-                  proficient in the languages Python, Java, and C.
+                  security experience at companies including Louisiana Blue and Cameron LNG. 
+                  Furthermore, I am proficient in the languages Python, Java, and C.
                 </p><p>
                   Aside from programming, some of my hobbies include fishing,
                   jogging, and sketching.
