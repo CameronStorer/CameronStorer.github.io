@@ -52,7 +52,7 @@ This portfolio is hosted on GitHub Pages, and you can view it live in your web b
 
 I'm always open to new opportunities and collaborations. Feel free to reach out to me through:
 
-  * **[Email](contact@cameronstorer.com)**
+  * **[Email](mailto:contact@cameronstorer.com)**
   * **[LinkedIn](https://www.linkedin.com/in/cameron-storer-4b3844294)**
   * **[GitHub](https://github.com/cameronstorer)**
 
