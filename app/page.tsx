@@ -62,14 +62,14 @@ const App = () => {
     
     <div className="bg-gray-900 text-gray-100 font-sans antialiased">
 
-      {/* --- Tech Blog Ad --- */}
+      {/* --- Tech Blog Ad --- 
       <section className="py-1 pb-0 bg-teal-400">
         <div className="container bg-teal-400 m-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-1xl text-center m-0 text-gray-900">Check out my <a className="text-white italic"
            href="https://blog.cameronstorer.com" target="_blank" 
           rel="noopener noreferrer">Tech Blog</a></h2>
         </div>
-      </section>
+      </section>*/}
 
       {/* --- Navigation Bar --- */}
       <div className="bg-gray-800 text-[2.625rem] md:text-6xl m-auto font-bold font-serif text-teal-400 pt-4 mb-[-9] md:mb-[-12] text-center relative z-60"> <a href="/">Cameron Storer</a></div>
