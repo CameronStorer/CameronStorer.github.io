@@ -58,6 +58,26 @@ const App = () => {
   // Projects that should be rendered currently
   const visProjects = projects.slice(0, visCount);
 
+  // List of skills with their icons and colors
+  const skills = [
+    { label: 'Python',           icon: 'devicon-python-plain',       color: '#3776AB' },
+    { label: 'Java',             icon: 'devicon-java-plain',         color: '#ED8B00' },
+    { label: 'Dart',             icon: 'devicon-dart-plain',         color: '#0175C2' },
+    { label: 'C#',               icon: 'devicon-csharp-plain',       color: '#239120' },
+    { label: 'Go',               icon: 'devicon-go-plain',           color: '#00ADD8' },
+    { label: 'SQL',              icon: 'devicon-postgresql-plain',   color: '#336791' },
+    { label: 'HTML',             icon: 'devicon-html5-plain',        color: '#E34F26' },
+    { label: 'Tailwind CSS',     icon: 'devicon-tailwindcss-original', color: '#06B6D4' },
+    { label: 'JavaScript',       icon: 'devicon-javascript-plain',   color: '#F7DF1E' },
+    { label: 'TypeScript',       icon: 'devicon-typescript-plain',   color: '#3178C6' },
+    { label: 'React',            icon: 'devicon-react-original',     color: '#61DAFB' },
+    { label: 'Bash',             icon: 'devicon-bash-plain',         color: '#4EAA25' },
+    { label: 'PowerShell',       icon: 'devicon-powershell-plain',   color: '#5391FE' },
+    { label: 'Git',              icon: 'devicon-git-plain',          color: '#F05032' },
+    { label: 'Active Directory', icon: 'devicon-windows8-original',  color: '#0078D4' },
+    { label: 'SCCM',             icon: 'devicon-windows8-original',  color: '#737373' },
+  ];
+
   return (
     
     <div className="bg-gray-900 text-gray-100 font-sans antialiased">
@@ -98,18 +118,27 @@ const App = () => {
               </div>
               <div className="flex-grow text-lg max-w-2xl">
                 <p className="mb-4">
-                  As a Senior Computer Science student at <a href="https://www.latech.edu/" target='blank'>Louisiana
-                  Tech University</a>, I have a passion for technology
-                  and am eager to expand my knowledge in the realm of Cybersecurity and software development.
-                </p><p className="mb-4">
-                  Major-specific courses that I've completed include Advanced Data Structures, 
-                  Systems Programming, and Applied Cryptography. Throughout my 
-                  career, I have gained hands-on hardware, software, and cyber
-                  security experience at companies including Louisiana Blue and Cameron LNG. 
-                  Furthermore, I am proficient in the languages Python, Java, and C.
-                </p><p>
-                  Aside from programming, some of my hobbies include fishing,
-                  jogging, and sketching.
+
+                    As a Senior Computer Science student at <a href="https://www.latech.edu/" 
+                    target='blank'>Louisiana Tech University</a> with a concentration in 
+                    Cybersecurity, I love building things that are both functional and 
+                    secure. My coursework in Advanced Data Structures, Systems Programming, 
+                    and Applied Cryptography has given me a strong foundation, and I've had 
+                    the chance to put it to work through hands-on roles at Louisiana 
+                    Blue and Cameron LNG.
+                    
+                    </p><p className="mb-4">
+
+                    I'm comfortable anywhere in the stack — from low-level 
+                    systems to deployed web apps — and I'm especially drawn 
+                    to the overlap between security, software engineering, 
+                    and AI.
+                    
+                    </p><p>
+
+                    When I'm not at a keyboard, you'll find me 
+                    fishing, jogging, or sketching.
+
                 </p>
               </div>
             </div>
@@ -125,19 +154,19 @@ const App = () => {
         </section>
 
         {/* --- Projects Section --- */}
-        <section id="projects" className="py-20 pb-10 bg-gray-800 scroll-mt-5">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-38 2xl:px-68">
-            <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">My Projects</h2>
-            <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {/* map the previously defined 'projects' array values to these visible entities */}
-              {visProjects.map((project, index) => (
-                <div key={index} className="bg-gray-800 rounded-xl shadow-xl p-6 transform transition-transform hover:scale-105">
-                  <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="bg-gray-700 text-teal-400 text-sm font-medium px-3 py-1 rounded-full">
-                        {tag}
+<section id="projects" className="py-20 pb-10 bg-gray-800 scroll-mt-5">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-38 2xl:px-68">
+    <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">My Projects</h2>
+    <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {visProjects.map((project, index) => (
+        <div key={index} className="bg-[#1a1f2e] border border-gray-700 rounded-xl 
+        shadow-xl p-6 transform transition-transform hover:scale-103 hover:border-teal-400/50">
+          <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+          <p className="text-gray-400 mb-4">{project.description}</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.tags.map((tag, tagIndex) => (
+              <span key={tagIndex} className="bg-gray-700 text-teal-400 text-sm font-medium px-3 py-1 rounded-full">
+                {tag}
                       </span>
                     ))}
                   </div>
@@ -189,9 +218,26 @@ const App = () => {
 
         {/* --- Skills Section --- */}
         <section id="skills" className="py-20 bp-10 scroll-mt-5">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-58 xxl:px-70">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-85 xxl:px-70">
             <h2 className="text-3xl font-bold text-center mb-12 text-teal-400">Skills</h2>
-            <div className="flex flex-wrap justify-center gap-4 text-center">
+
+            {/* Display the skills in a grid of tags */}
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+            <div className="flex flex-wrap justify-center gap-3">
+              {skills.map(({ label, icon, color }) => (
+                <span key={label}className="inline-flex items-center 
+                gap-3 px-4.5 py-2.5 rounded-lg bg-gray-800 border 
+                border-gray-700 text-white text-sm font-medium hover:bg-gray-700 hover:text-teal-400 
+                hover:border-teal-400 hover:scale-105">
+                  <i className={icon} style={{ color, fontSize: '16px' }} aria-hidden="true" />
+                  {label}
+                </span>
+              ))}
+            </div>
+          </div>
+
+            {/* Old version */}
+            {/* <div className="flex flex-wrap justify-center gap-4 text-center">
               {['Python', 'Java', 'Dart', 'C#', 'Go', 'SQL', 'HTML', 'Tailwind CSS', 'JavaScript', 
                 'Bash Scripting', 'PowerShell Scripting', 'Git',
                 'Microsoft Acitve Directory', 'Microsoft SCCM',
@@ -200,8 +246,7 @@ const App = () => {
                   {skill}
                 </div>
               ))}
-            </div>
-          </div>
+            </div> */}
         </section>
 
         {/* --- Contact Section --- */}
